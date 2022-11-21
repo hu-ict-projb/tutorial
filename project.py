@@ -1,5 +1,10 @@
+LANG = "EN"
+
+
 def check_antwoord(antwoord):
     return antwoord == 42
+
+
 
 def hello_world(lang):
     if lang == "NL":
@@ -16,3 +21,19 @@ if check_antwoord(antwoord):
     print("Correct!")
 else:
     print("Mogelijk heb je een andere vraag in je hoofd?")
+
+
+
+
+def test():
+    assert hello_world("NL") == "Hallo wereld!", "Test failed"
+
+def main():
+    print(hello_world(LANG))
+
+#test()
+main()
+
+
+
+
